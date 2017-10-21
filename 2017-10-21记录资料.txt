@@ -1,0 +1,91 @@
+移动端一定要加以下：
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。添加以下头部可以禁用掉该优化-->
+<meta name="wap-font-scale" content="no">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Pragma" content="no-cache">
+<script>
+            function setWidth(uiWidth){
+                var setDensitydpi = function(spec){
+                    var dpr = window.devicePixelRatio,
+                    deviceWidth = 0,
+                    getTargetDensitydpi = 0,
+                    temContent = "";
+                    deviceWidth = dpr == 2 ? 720 : ( dpr == 1.5 ? 480 : ( dpr == 1 ? 320 : 240 ) );
+                    getTargetDensitydpi = uiWidth / deviceWidth * dpr * 160;
+                    temContent = 'target-densitydpi=' + getTargetDensitydpi + ', width=device-width , user-scalable=no' ;
+                    return temContent;
+                };
+                var setDeviceWidth = function(){
+                    return 'target-densitydpi=device-dpi, width='+uiWidth +', user-scalable=no,minimal-ui';
+                };
+                var vp = document.createElement("meta");
+                vp.setAttribute("name","viewport");
+                var vpContent = "";
+                var ua = navigator.userAgent;
+                vpContent = setDeviceWidth();
+                ( /Android/i.test(ua) && /(2\.[1|2|3]\.[\d])/i.test(ua) ) && ( vpContent = setDensitydpi() );
+                vp.setAttribute( 'content', vpContent);
+                document.getElementsByTagName('head')[0].appendChild(vp);
+            }
+            setWidth(640);
+        </script>
+       
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+
+
+
+。。。。。。。。。。。移动端重置样式
+
+@charset "utf-8";
+/* CSS Document */
+*{ font-family:"微软雅黑";}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote{padding:0;margin:0;color:#666;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+strong{font-style:normal;}
+ol,ul{list-style:none;}
+caption{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+a{outline:expression(this.hideFocus=true);outline:none;cursor:pointer;text-decoration:none;color:#666;}
+a:hover{ color:#C00;}
+input,button,select,textarea{outline:none}
+.clear{zoom:1;clear:both; height:0; line-height:0; font-size:0;}
+.contxt{ width:588px; padding:5px; height:36px; background:#adadad; margin-top:14px; border:none; color:#FFF; font-size:18px;}
+.btn{ width:598px; height:; background:#b50000; color:#fff; border:none; margin-top:13px; font-size:30px; height:54px; line-height:54px; text-align:center;}
+body{cursor:default;-webkit-text-size-adjust:none;font-size:100%;font-family:Arial;background:#FFF;}
+DIV.green-black{ width:100%;  padding-top:10px; text-align:center; }
+DIV.green-black A{PADDING-RIGHT: 5px;PADDING-LEFT: 5px;PADDING-BOTTOM: 2px;COLOR: #fff;MARGIN-RIGHT: 2px;PADDING-TOP: 2px;BORDER: #ddd 1px solid;TEXT-DECORATION: none;font-size:20px;background-color: #ddd;}
+DIV.green-black A:hover{BORDER: #c50000 1px solid;COLOR: #fff;font-size:20px;background-color: #c50000;}
+DIV.green-black A:active{BORDER: 1px solid #c50000;COLOR: #fff;font-size:20px;background-color: #c50000;}
+DIV.green-black SPAN.current{PADDING-RIGHT: 5px;PADDING-LEFT: 5px;FONT-WEIGHT: bold;PADDING-BOTTOM: 2px;COLOR: #fff;MARGIN-RIGHT: 2px;PADDING-TOP: 2px;BORDER: 1px solid #c50000;font-size:20px;background-color: #c50000;}
+DIV.green-black SPAN.disabled{PADDING-RIGHT: 5px;PADDING-LEFT: 5px;PADDING-BOTTOM: 2px;COLOR: #fff;MARGIN-RIGHT: 2px;PADDING-TOP: 2px;BORDER: #c50000 1px solid;font-size:20px}
+
+
+
+text-overflow: ellipsis;  文字后面三小点显示
+
+
+【慕课网】ES6零基础教学 解析彩票项目
+链接：http://pan.baidu.com/s/1geLRrW3 密码：u6g8
+【慕课网】带你入门Vue2.0及案例开发
+链接：http://pan.baidu.com/s/1c10sFza 密码：vv0p
+
+https://pan.baidu.com/share/link?shareid=2225014584&uk=1711974142#list/path=%2F
+密码：zxhm
+
+
+给大家推荐个好用的vue管理系统框架：https://github.com/lss5270/vue-admin-spa 。
+已经具备了基本的后台功能（登录/注册/注销、密码修改、个人主页、权限验证、侧边栏、面包屑、富文本编辑器、切换主题、表单验证提交、列表排序增删改查、401，404重定向页面、导出excel等），
+接口已经进行json模拟，实际开发直接替换成真正接口路径就行，2次开发成本低。借鉴了3个项目加上自己的思想，才弄成的框架，如果有喜欢的小伙伴麻烦给个star，点击右上方的star就行了  谢谢
+
+
+Vuejs+node+mongodb全栈打造商城系统。
+vue node商城 1-5章 链接：http://pan.baidu.com/s/1i5GEOWt 密码：4pqh
+
+vue node商城 6-8章 链接： http://pan.baidu.com/s/1c2D1uj2 密码：pzwm
+
+
